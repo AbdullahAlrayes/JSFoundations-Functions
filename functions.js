@@ -34,14 +34,6 @@ function isOdd(n) {
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
-  // let list = [];
-  // for (let step = 0; step < n; step++) {
-  //   const result = isOdd(step);
-  //   if (result) {
-  //     list.push(step);
-  //   }
-  // }
-  // return list;
   if (isOdd(n)) {
     return (n - 1) / 2;
   } else {
