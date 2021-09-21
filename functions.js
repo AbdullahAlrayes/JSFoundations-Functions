@@ -21,7 +21,6 @@ function greet(name) {
  */
 function isOdd(n) {
   if (n % 2 !== 0) {
-    console.log(true);
     return true;
   } else return false;
 }
@@ -70,6 +69,6 @@ function squareOrDouble(n) {
 greet('Abdullah');
 isOdd(3);
 oddsSmallerThan(10);
-squareOrDouble(10);
+squareOrDouble(9);
 
 module.exports = { greet, isOdd, oddsSmallerThan, squareOrDouble };
