@@ -49,11 +49,8 @@ function oddsSmallerThan(n) {
  * squareOrDouble(9) -> 81
  */
 function squareOrDouble(n) {
-  if (isOdd(n)) {
-    return n * n;
-  } else {
-    return n * 2;
-  }
+  if (isOdd(n)) return n * n;
+  else return n * 2;
 }
 
 greet('Abdullah');
