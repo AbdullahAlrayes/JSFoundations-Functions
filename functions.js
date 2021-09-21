@@ -35,18 +35,22 @@ function isOdd(n) {
  * oddsSmallerThan(15) -> 7
  */
 function oddsSmallerThan(n) {
-  let list = [];
-  for (let step = 0; step < n; step++) {
-    const result = isOdd(step);
-    if (result) {
-      list.push(step);
-    }
+  // let list = [];
+  // for (let step = 0; step < n; step++) {
+  //   const result = isOdd(step);
+  //   if (result) {
+  //     list.push(step);
+  //   }
+  // }
+  // return list;
+  if (isOdd(n)) {
+    return (n - 1) / 2;
+  } else {
+    return n / 2;
   }
-  console.log(list);
-  return list;
 }
 
-/**
+/*
  * squareOrDouble(n):
  * - receives a number n
  * - returns its square if it's odd
@@ -58,10 +62,8 @@ function oddsSmallerThan(n) {
  */
 function squareOrDouble(n) {
   if (isOdd(n)) {
-    console.log(n * n);
     return n * n;
   } else {
-    console.log(n * 2);
     return n * 2;
   }
 }
