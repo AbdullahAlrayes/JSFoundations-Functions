@@ -20,9 +20,8 @@ function greet(name) {
  * isOdd(10) -> false
  */
 function isOdd(n) {
-  if (n % 2 !== 0) {
-    return true;
-  } else return false;
+  if (n % 2 !== 0) return true;
+  else return false;
 }
 
 /**
